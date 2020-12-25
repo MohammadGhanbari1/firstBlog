@@ -5,11 +5,11 @@ articles
 {%block content%}
 <div class="container">
         <h1>articles list</h1>
-        {% for article in articles %}
-        <h2><a href="{% url 'articles:detail' slug=article.slug %}">{{article.title}}</a></h2>
+             {% for article in articles %}
+<h2><a href="{% url 'articles:detail' slug=article.slug %}">{{article.title}}</a></h2>
         <p>{{article.Summary}}</p>
         <p>{{article.date}}</p>
-    {% endfor %}
+{% endfor %}
 </div>
 
 {%endblock%}
